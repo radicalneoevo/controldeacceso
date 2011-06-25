@@ -1,0 +1,614 @@
+/* Anulación de márgenes y relleno de hoja de estilos del navegador */
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+/*******************************************************************************
+                            Secciones div
+*******************************************************************************/
+
+/********************************** Wrapper ***********************************/
+
+#wrapper
+{
+    background-color: #D4C792;
+    background-image: url(images/mosaico.gif);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333333;
+}
+
+/********************************* Cabecera ***********************************/
+
+/* La imagen va abajo a la izquierda, sin margin para que quede junto al cuerpo */
+#cabecera
+{
+    width: 1000px;
+    height: 81px;
+    margin: 0 auto;
+}
+
+/* Original
+#cabecera
+{
+    width: 710px;
+    height: 96px;
+    margin: 0 auto;
+    background-image: url(images/fondoSuperior.gif);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+*/
+
+/**** Logo ***/
+
+#logo
+{
+    float: left;
+    padding: 20px 0 0 15px;
+}
+
+#logo h1
+{
+    font: italic 36px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#logo h2
+{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #D4C792;
+    padding: 0;
+    margin: -5px 0 0 0;
+}
+
+#logo a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/**** Menu de pestañas ***/
+
+#menu
+{
+    float: right;
+    padding-right: 10px;
+}
+
+#menu ul
+{
+    list-style: none;
+    line-height: normal;
+    padding: 50px 0 0 0;
+    margin: 0;
+}
+
+#menu li
+{
+    display: inline;
+}
+
+#menu a
+{
+    float: left;
+    width: 110px;
+    height: 20px;
+    background: url(images/pestana.gif);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+#menu a:hover, #menu .active a
+{
+    background-image: url(images/pestanaSeleccionada.gif);
+    color: #AA2808;
+}
+
+/********************************** Cuerpo ************************************/
+
+#cuerpo
+{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #D4C792;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #ffffff;
+}
+
+/* Original
+#cuerpo
+{
+    width: 710px;
+    margin: 0 auto;
+    background-color: #D4C792;
+    background-image: url(images/fondoCentro.gif);
+    background-repeat: repeat-y;
+}
+*/
+
+/******************************** Contenido ***********************************/
+
+#contenido
+{
+    float: left;
+    width: 800px;
+    padding: 30px 0 0 35px;
+}
+
+/* Original
+#contenido
+{
+    float: left;
+    width: 388px;
+    padding: 30px 0 0 35px;
+
+}
+*/
+
+#contenido h1, #contenido h2, #contenido h3, #contenido h4
+{
+    margin-bottom: 20px;
+}
+
+#contenido h1
+{
+    font-size: 160%;
+}
+
+#contenido h2
+{
+    font-size: 140%;
+}
+
+#contenido h3
+{
+    font-size: 120%;
+}
+
+#contenido h4
+{
+    font-size: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+#contenido ul, #contenido ol
+{
+    list-style-position: inside;
+}
+
+/* ????? */
+#contenido .boxed
+{
+    float: left;
+    width: 46%;
+    padding-right: 2%;
+}
+
+#titulos
+{
+    
+}
+
+.tablaTituloBotones
+{
+    padding: 10px;
+}
+
+.tablaTituloBotones p
+{
+    text-align: center;
+    font-style: italic;
+}
+
+.contenedorBotones
+{
+    width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/****************************** Barra lateral **********************************/
+
+#barralateral
+{
+    float: right;
+    width: 150px;
+    padding: 0;
+    background-color: #aa2808;
+    
+    border-left-style: solid;
+    border-left-width: 6px;
+    border-left-color: #ffffff;
+
+    border-bottom-style: solid;
+    border-bottom-width: 6px;
+    border-bottom-color: #ffffff;
+}
+
+/* Original
+#barralateral
+{
+    float: right;
+    width: 208px;
+    padding: 0 35px 0 0;
+}
+*/
+
+#barralateral ul
+{
+    list-style: none;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+
+#barralateral li
+{
+    padding: 20px 0;
+    margin-bottom: 1px;
+}
+
+
+#barralateral li li
+{
+    padding: 7px 20px;
+    border: none;
+    margin: 0;
+}
+
+#barralateral h2
+{
+    font-size: 100%;
+    color: #D4C792;
+    padding: 5px 20px;	
+    border-bottom: 1px dotted #FFFFFF;
+}
+
+#barralateral h3
+{
+    font-size: 77%;
+    color: #D4C792;
+}
+
+#barralateral p
+{
+    color: #D4C792;
+    line-height: normal;
+    margin: 0;
+}
+
+#barralateral a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+}
+
+#barralateral a:hover
+{
+    text-decoration: underline;
+}
+
+/******************************** Submenú *************************************/
+
+#submenu
+{
+}
+
+/********************************* Updates *************************************/
+
+#updates
+{
+}
+
+#updates a
+{
+    font-size: 85%;
+}
+
+/****************************** Pie de página *********************************/
+
+#piepagina
+{
+    color: #FFFFFF;
+    width: 1000px;
+    height: 50px;
+    padding: 40px 0 0 0;
+    margin: 0 auto;
+}
+
+/* Original
+#piepagina
+{
+    width: 710px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    background: url(images/fondoAbajo.gif) no-repeat;
+    color: #FFFFFF;
+}
+*/
+
+#piepagina p
+{
+    text-align: center;
+    font-size: 77%;
+    margin: 0;
+}
+
+#piepagina a
+{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+#piepagina a:hover
+{
+    text-decoration: none;
+}
+
+#logout
+{
+    float: right;
+    background-color: #D4C792;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffffff;
+}
+
+/********************************** Varios ************************************/
+
+.notas p
+{
+    width: 300px;
+    font-style: italic;
+    font-size: 8pt;
+    color: black;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+/******************************************************************************
+			Elementos HTML generales
+******************************************************************************/
+
+body
+{
+    background-image: url(images/mosaico.gif);
+}
+
+h1, h2, h3, h4
+{
+    text-align: center;
+}
+
+h1, h2, h3
+{
+    color: #AA2808;
+}
+
+h1
+{
+}
+
+h2
+{
+}
+
+h3
+{
+}
+
+p, blockquote, ul, ol
+{
+    line-height: 1.6em;
+    margin-bottom: 20px;
+}
+
+p
+{
+}
+
+blockquote
+{
+}
+
+ul
+{
+}
+
+ol
+{
+}
+
+a
+{
+    text-decoration: underline;
+    color: #323B51;
+}
+
+a.data
+{
+    text-decoration: underline;
+    color: yellow;
+}
+
+a.vinculoSimple
+{
+    
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: #FF0000;
+}
+
+/*********************************** Tablas ***********************************/
+
+/* Tabla con cabecera arriba para mostrar una cantidad de filas indefinida a priori */
+TABLE.tablaReporte
+{
+    background-color: #808080;
+    padding: 5px;
+    margin: auto;
+}
+
+TH.tablaReporte
+{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+TD.tablaReporte
+{
+    background-color: #AA2808;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/* Tabla de ancho fijo con cabecera a la izquierda con cantidad de fila definida a priori */
+TABLE.tablaCarga
+{
+    background-color: #808080;
+    padding: 5px;
+    margin: auto;
+}
+
+TH.tablaCarga
+{
+    color: white;
+    text-align: left;
+    width: 160px;
+    padding: 0;
+    padding-left: 10px;
+}
+
+TD.tablaCarga
+{
+    background-color: #808080;
+    text-align: center;
+    border-style: none;
+    padding: 1px;
+}
+
+/****************************** Formularios ***********************************/
+
+form
+{
+
+}
+
+form.soloBoton
+{
+    display: inline;
+}
+
+label
+{
+    font-weight: bold;
+    margin: 10px 5px;
+}
+
+input.radioButton
+{
+    margin: 10px 5px;
+}
+
+input.campoTexto
+{
+    background-color: #FFFFFF;
+    text-align: left;
+    margin: 10px 5px;
+}
+
+input.campoTextoChico
+{
+    text-align: center;
+}
+
+/* Campo de texto de ancho fijo */
+input.campoTextoAlineado
+{
+    text-align: center;
+    width: 200px;
+    margin: 0;
+}
+
+/* Campo de texto de ancho fijo para fechas y un boton para seleccionar */
+input.campoTextoAlineadoFecha
+{
+    text-align: center;
+    width: 180px;
+    margin: 0;
+}
+
+/* Area de texto de ancho fijo */
+textarea.areaTexto
+{
+    width: 200px;
+}
+
+/* Menú seleccionable de ancho fijo */
+select
+{
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 125px;
+}
+
+/* Cuadro de selección de ancho fijo */
+select.cuadroSeleccionAlineado
+{
+    width: 204px;
+}
+
+/* Conjunto de campos de ancho fijo */
+fieldset
+{
+    width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+/* Conjunto de campos de ancho fijo de mayor tamaño */
+fieldset.ancho
+{
+    width: 525px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+legend
+{
+    font-weight: bold;
+    font-size: 125%;
+    text-align: center;
+    color: #AA2808;
+    margin-left: 50px;
+}
