@@ -1,12 +1,12 @@
 #summary Instalacion del sistema
 
-= Instalación del Panel de control =
+= Instalación =
+== Instalación del Panel de control ==
 
 Requisitos:
-
 * Apache >= 2.2
 * MySQL >= 5.1
 * PHP >= 5.3
 * PEAR
 
-= Instalacion del Cliente =
+== Instalacion del Cliente ==
