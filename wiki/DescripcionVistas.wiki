@@ -1,0 +1,72 @@
+= Descripcion de las vistas =
+
+
+== horario_asignado_duracion ==
+
+Tabla horario_asignado más duración y semana sin horarios inactivos
+
+
+
+== horario_asignado_habitual_duracion ==
+
+Tabla horario_asignado_habitual más duración y semana sin horarios inactivos
+
+
+
+== horas_compensadas_a_otro_usuario ==
+
+De la tabla turno_usuario_area, agrupa por usuario y area la cantidad de horas que le compenso el usuario a otro usuario
+
+
+
+== horas_compensadas_por_otro_usuario ==
+
+De la tabla turno_usuario_area, agrupa por usuario y area la cantidad de horas que le compenso otro usuario
+
+
+
+== horas_compensadas_por_usuario ==
+
+De la tabla turno_usuario_area, agrupa por usuario y area la cantidad de horas que el mismo usuario recupero de alguna falta anterior
+
+
+
+== horas_extra ==
+
+De la tabla turno_usuario_area, agrupa por usuario y area la cantidad de horas extras que hizo cada dia
+
+
+
+== horas_habituales_asignadas ==
+
+De la tabla horario_asignado_duracion, agrupa por usuario y area la cantidad de horas asignadas que tiene asignado por dia, se descartan las horarios que compensan faltas
+
+
+
+== horas_habituales_cumplidas ==
+
+De la tabla turno_usuario_area, agrupa por usuario y area la cantidad de horas que cumplio cada dia, se descartan las turnos que compensan faltas
+
+
+
+== notificacion_falta_usuarios ==
+
+Tabla notificacion_falta con sus respectivos usuarios (el que falta y el que recupera)
+
+
+
+== turno_usuario_area ==
+
+Tabla turno con su respectivos usuario, área y duración. Unión de turnos normales y horas extras.
+
+
+
+== cambio_horario_usuario ==
+
+Tabla cambio_horario_habitual con el usuario al que corresponde
+
+
+
+== nuevo_horario_usuario ==
+
+Tabla nuevo_horario_habitual con el usuario al que corresponde
