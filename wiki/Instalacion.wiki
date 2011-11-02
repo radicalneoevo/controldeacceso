@@ -16,7 +16,7 @@ bind-address    = 0.0.0.0
 # skip-networking
 }}}
 
- ----
+----
 == Instalación del Cliente ==
 
 
@@ -27,4 +27,4 @@ bind-address    = 0.0.0.0
 
 
 
- ----
+----
