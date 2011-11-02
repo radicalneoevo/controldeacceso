@@ -4,7 +4,7 @@
  * Laboratorio de Sistemas - Sistema de control de acceso de personal
  */
 
-include_once("gui/pagina.php");
+include_once("gui/Pagina.php");
 include_once("gui/contenidos/ContenidoNovedades.php");
 include_once("login.php");
 
