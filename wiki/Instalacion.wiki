@@ -25,6 +25,13 @@ bind-address    = 0.0.0.0
  * .NET FRAMEWORK 3.5
  * Mysql .NET CONNECTOR 
 
-
+Hay algunos parametros de la base de datos que deben cambiarse antes de hacer un *publish*. En el archivo app.conf.
+{{{
+<appSettings file="db.config">
+    <add key="dbLocation" value="192.168.1.101" />
+    <add key="dbUser" value="cliente" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+</appSettings>
+}}}
 
 ----
