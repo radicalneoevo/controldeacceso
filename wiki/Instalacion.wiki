@@ -1,12 +1,30 @@
 #summary Instalacion del sistema
 
 = Instalación =
+----
 == Instalación del Panel de control ==
 
-Requisitos:
-* Apache >= 2.2
-* MySQL >= 5.1
-* PHP >= 5.3
-* PEAR
+*Requisitos:*
+ * Apache 2.2
+ * MySQL 5.1
+ * PHP 5.3
+ * PEAR
 
-=== Instalacion del Cliente ===
+Para que el servidor MySQL sea accesible externamente hay que poner lo siguiente en el archivo *my.conf*
+{{{
+bind-address    = 0.0.0.0
+# skip-networking
+}}}
+
+ ----
+== Instalación del Cliente ==
+
+
+
+*Requisitos:*
+ * .NET FRAMEWORK 3.5
+ * Mysql .NET CONNECTOR 
+
+
+
+ ----
