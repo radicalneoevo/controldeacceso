@@ -1,4 +1,5 @@
 #summary Documento de ayuda del sistema de control de acceso de personal v0.1
+
 == Principales conceptos del sistema ==
 
 === Períodos ===
@@ -17,4 +18,4 @@ Dia de la semana y hora que normalmente cumple un usuario. Está asociado a un p
 Representa un horario que debe cumplir un usuario en una fecha y horas específicas. Está asociado a un período y área en particular. Puede pertenecer a un horario habitual.
 
 == Turno ==
-Representa el horario que efectivamente cumplio un usuario, esta asociado generalmente a un horario (podrian ser horas extras hechas por el usuario).
+Representa el horario que efectivamente cumplió un usuario, esta asociado generalmente a un horario (podrían ser horas extras hechas por el usuario).
