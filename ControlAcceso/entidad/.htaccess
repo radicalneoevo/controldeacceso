@@ -8,7 +8,8 @@ Allow from 127.0.0.1
 # To allow execution of cgi scripts in this directory uncomment next two lines.
 
 AddHandler cgi-script .pl .cgi
-Options +ExecCGI +FollowSymLinks
+# Comentado porque en en el error.log tira 'Options not allowed here'
+# Options +ExecCGI +FollowSymLinks
 
 #--
 # Activate this to use the Private Server Feature!
