@@ -19,3 +19,5 @@ Representa un horario que debe cumplir un usuario en una fecha y horas específi
 
 == Turno ==
 Representa el horario que efectivamente cumplió un usuario, esta asociado generalmente a un horario (podrían ser horas extras hechas por el usuario).
+
+<g:plusone size="medium"></g:plusone>
