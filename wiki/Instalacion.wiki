@@ -1,14 +1,20 @@
-#summary Instalacion del sistema
+#summary Instalación del sistema
 
 = Instalación =
 ----
 == Instalación del Panel de control ==
 
 *Requisitos:*
- * Apache 2.2
- * MySQL 5.1
+ * Apache 2.2.13
+ * MySQL 5.1.38
  * PHP 5.3
- * PEAR
+ * PEAR 1.9.0
+  ** Auth 1.6.2
+  ** DB 1.7.14RC1 beta
+  ** HTML_Common 1.2.5
+  ** HTML_Table 1.8.2
+  ** MDB2 2.5.0b2 beta
+  ** MDB2_Driver_mysql 1.5.0b2 beta
 
 Para que el servidor MySQL sea accesible externamente hay que poner lo siguiente en el archivo *my.conf*
 {{{
