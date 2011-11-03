@@ -36,3 +36,5 @@ Tabla cambio_horario_habitual con el usuario al que corresponde
 
 ===nuevo_horario_usuario===
 Tabla nuevo_horario_habitual con el usuario al que corresponde
+
+<g:plusone size="medium"></g:plusone>
