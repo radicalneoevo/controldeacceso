@@ -1,5 +1,6 @@
 #summary Descripción de las vistas
 ==Descripción de las vistas==
+---
 
 ===horario_asignado_duracion===
 Tabla horario_asignado más duración y semana sin horarios inactivos
