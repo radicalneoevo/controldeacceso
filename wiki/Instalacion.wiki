@@ -43,4 +43,4 @@ Hay algunos parametros de la base de datos que deben cambiarse antes de hacer un
 ----
 
 
-http://code.google.com/images/code_sm.png
+<g:plusone size="medium"></g:plusone>
