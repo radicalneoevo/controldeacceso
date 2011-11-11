@@ -29,7 +29,10 @@ bind-address    = 0.0.0.0
  # Click en "Server Administration", loguearse con los datos provistos
  # En el panel de control de web, en la izquierda en "Tools", ir a la opción phpMyAdmin
  # En la pestaña "SQL" correr el script con la base de datos
-
+ # Ir a la carpeta donde se descomprimió el Servidor WAMP y luego a www, allí pegar la carpeta "controlacceso" con el código
+ # Editar los datos de conexión a la Base de datos en la clase DAO.php dentro de controlacceso/dao
+ # Editar los datos de autenticación HTTP en el archivo login.php dentro de controlacceso
+ # Acceder a la aplicación en la URL http://hostservidorweb/controlacceso/
 ----
 == 2) Instalación del Cliente ==
 
