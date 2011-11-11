@@ -2,7 +2,7 @@
 
 = Instalación =
 ----
-== Instalación del Panel de control ==
+== 1) Instalación del Panel de control web ==
 
 *Requisitos:*
  * Apache 2.2.13
@@ -22,8 +22,16 @@ bind-address    = 0.0.0.0
 # skip-networking
 }}}
 
+*Instrucciones:*
+ # Descomprimir el archivo UniServer.rar
+ # Dentro de la carpeta descomprimida, iniciar el servidor con "Start.exe", va a aparecer un icono azul en el área de notificación
+ # Click derecho sobre el icono del servidor y luego en "Install and Run All Services", se va abrir el navegador por defecto con la página principal del Servidor WAMP
+ # Click en "Server Administration", loguearse con los datos provistos
+ # En el panel de control de web, en la izquierda en "Tools", ir a la opción phpMyAdmin
+ # En la pestaña "SQL" correr el script con la base de datos
+
 ----
-== Instalación del Cliente ==
+== 2) Instalación del Cliente ==
 
 
 
