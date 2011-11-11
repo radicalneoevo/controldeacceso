@@ -23,15 +23,15 @@ bind-address    = 0.0.0.0
 }}}
 
 *Instrucciones:*
- # Descomprimir el archivo UniServer.rar
- # Dentro de la carpeta descomprimida, iniciar el servidor con "Start.exe", va a aparecer un icono azul en el área de notificación
- # Click derecho sobre el icono del servidor y luego en "Install and Run All Services", se va abrir el navegador por defecto con la página principal del Servidor WAMP
- # Click en "Server Administration", loguearse con los datos provistos
- # En el panel de control de web, en la izquierda en "Tools", ir a la opción phpMyAdmin
- # En la pestaña "SQL" correr el script con la base de datos
- # Ir a la carpeta donde se descomprimió el Servidor WAMP y luego a www, allí pegar la carpeta "controlacceso" con el código
- # Editar los datos de conexión a la Base de datos en la clase DAO.php dentro de controlacceso/dao
- # Editar los datos de autenticación HTTP en el archivo login.php dentro de controlacceso
+ # Descomprimir el archivo _UniServer.rar_
+ # Dentro de la carpeta descomprimida, iniciar el servidor con _"Start.exe"_, va a aparecer un icono azul en el área de notificación
+ # Click derecho sobre el icono del servidor y luego en _"Install and Run All Services"_, se va abrir el navegador por defecto con la página principal del Servidor WAMP
+ # Click en _"Server Administration"_, loguearse con los datos provistos
+ # En el panel de control de web, en la izquierda en _"Tools"_, ir a la opción _phpMyAdmin_
+ # En la pestaña _"SQL"_ correr el script con la base de datos
+ # Ir a la carpeta donde se descomprimió el Servidor WAMP y luego a _www_, allí pegar la carpeta _"controlacceso"_ con el código
+ # Editar los datos de conexión a la Base de datos en la clase _DAO.php_ dentro de _controlacceso/dao_
+ # Editar los datos de autenticación HTTP en el archivo _login.php_ dentro de _controlacceso_
  # Acceder a la aplicación en la URL http://hostservidorweb/controlacceso/
 ----
 == 2) Instalación del Cliente ==
