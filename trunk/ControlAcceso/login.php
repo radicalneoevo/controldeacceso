@@ -52,7 +52,7 @@ function mensajeLoginFallido()
 }
 
 // Opciones de configuración del objeto Auth
-$options = array("dsn" => "mysql://root:labsis@localhost/controlacceso",
+$options = array("dsn" => "mysql://usuario:contrasena@host/schema",
                  "table" => "usuario",
                  "usernamecol" => "numeroDocumento",
                  "passwordcol" => "password",
