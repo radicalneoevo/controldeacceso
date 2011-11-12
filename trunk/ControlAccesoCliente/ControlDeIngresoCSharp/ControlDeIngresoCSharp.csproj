@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F8D076C-838A-452E-9D8E-C3ACA28C1021}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControlDeIngresoCSharp</RootNamespace>
+    <AssemblyName>ControlDeIngresoCSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ManifestCertificateThumbprint>2A667EEDD3C06B81D704476668052B6753FF6701</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ControlDeIngresoCSharp_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>ControlDeIngresoCSharp.Program</StartupObject>
+    <ApplicationIcon>Resources\favicon.ico</ApplicationIcon>
+    <PublishUrl>C:\control\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Control Ingreso</ProductName>
+    <CreateWebPageOnPublish>false</CreateWebPageOnPublish>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base de datos\AntiInyeccionSQL.cs" />
+    <Compile Include="Base de datos\GestorHorarios.cs" />
+    <Compile Include="Base de datos\GestorNotificaciones.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Excepciones\Manejo Horarios\CambioHorarioInvalidoException.cs" />
+    <Compile Include="Excepciones\Sintaxis\CamposVaciosException.cs" />
+    <Compile Include="Excepciones\Manejo Horarios\EliminacionInvalidaException.cs" />
+    <Compile Include="Excepciones\Sintaxis\FormatoPassInvalidoException.cs" />
+    <Compile Include="Excepciones\Sintaxis\HorarioFormatException.cs" />
+    <Compile Include="Excepciones\Sintaxis\NoCoincidePassException.cs" />
+    <Compile Include="Excepciones\Generales\NoSeleccionoFilaException.cs" />
+    <Compile Include="Excepciones\Manejo Horarios\RangoHorarioIncosistenteException.cs" />
+    <Compile Include="Excepciones\Manejo Horarios\RangoMinimoException.cs" />
+    <Compile Include="Excepciones\Sintaxis\SintaxisPasswordInvalida.cs" />
+    <Compile Include="Excepciones\SQL\CaracterInvalidoException.cs" />
+    <Compile Include="Excepciones\SQL\SQLErrorException.cs" />
+    <Compile Include="Excepciones\Manejo Horarios\TurnoSuperpuestoException.cs" />
+    <Compile Include="Interfaces\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\CambioPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\CambioPassword.Designer.cs">
+      <DependentUpon>CambioPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\EditarHorarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\EditarHorarios.Designer.cs">
+      <DependentUpon>EditarHorarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Fecha.cs" />
+    <Compile Include="Base de datos\GestorTurnos.cs" />
+    <Compile Include="Base de datos\GestorUsuarios.cs" />
+    <Compile Include="Entidades\Horario.cs" />
+    <Compile Include="Interfaces\DatosPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\DatosPersonales.Designer.cs">
+      <DependentUpon>DatosPersonales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\LoginHuella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\LoginHuella.Designer.cs">
+      <DependentUpon>LoginHuella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\LoginPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\LoginPassword.Designer.cs">
+      <DependentUpon>LoginPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\PantallaBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\PantallaBienvenida.Designer.cs">
+      <DependentUpon>PantallaBienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ValidarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\ValidarUsuario.Designer.cs">
+      <DependentUpon>ValidarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logica\RangoHorario.cs" />
+    <Compile Include="Logica\HorarioHabitualDTO.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interfaces\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\CambioPassword.resx">
+      <DependentUpon>CambioPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\EditarHorarios.resx">
+      <DependentUpon>EditarHorarios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\DatosPersonales.resx">
+      <DependentUpon>DatosPersonales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\LoginHuella.resx">
+      <DependentUpon>LoginHuella.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\LoginPassword.resx">
+      <DependentUpon>LoginPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\PantallaBienvenida.resx">
+      <DependentUpon>PantallaBienvenida.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\ValidarUsuario.resx">
+      <DependentUpon>ValidarUsuario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\VerPresentes.resx">
+      <DependentUpon>VerPresentes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\SNTPClient.cs" />
+    <Compile Include="Interfaces\VerPresentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\VerPresentes.Designer.cs">
+      <DependentUpon>VerPresentes.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ControlDeIngresoCSharp_TemporaryKey.pfx" />
+    <None Include="Resources\huella.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\lateral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\favicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
